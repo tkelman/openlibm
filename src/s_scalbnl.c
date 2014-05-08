@@ -64,5 +64,3 @@ scalbnl (long double x, int n)
 	u.bits.exp = k;
         return u.e*0x1p-128;
 }
-
-__strong_reference(scalbnl, ldexpl);

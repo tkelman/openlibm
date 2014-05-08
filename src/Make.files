@@ -20,8 +20,8 @@ $(CUR_SRCS) = common.c \
 	s_fmax.c s_fmaxf.c s_fmaxl.c s_fmin.c \
 	s_fminf.c s_fminl.c s_fpclassify.c \
 	s_frexp.c s_frexpf.c s_ilogb.c s_ilogbf.c \
-	s_ilogbl.c s_isinf.c s_isfinite.c s_isnormal.c s_isnan.c \
-	s_llrint.c s_llrintf.c s_llround.c s_llroundf.c s_llroundl.c \
+	s_ilogbl.c s_isinf.c s_isfinite.c s_isnormal.c s_isnan.c s_ldexp.c \
+	s_ldexpf.c s_llrint.c s_llrintf.c s_llround.c s_llroundf.c s_llroundl.c \
 	s_log1p.c s_log1pf.c s_logb.c s_logbf.c s_lrint.c s_lrintf.c \
 	s_lround.c s_lroundf.c s_lroundl.c s_modf.c s_modff.c \
 	s_nearbyint.c s_nextafter.c s_nextafterf.c \
@@ -45,7 +45,7 @@ $(CUR_SRCS) +=	e_acosl.c e_asinl.c e_atan2l.c e_fmodl.c \
 	e_hypotl.c e_remainderl.c e_sqrtl.c \
 	s_atanl.c s_ceill.c s_cosl.c s_cprojl.c \
 	s_csqrtl.c s_floorl.c s_fmal.c \
-	s_frexpl.c s_logbl.c s_nexttoward.c \
+	s_frexpl.c s_ldexpl.c s_logbl.c s_nexttoward.c \
 	s_remquol.c \
 	s_sinl.c s_sincosl.c s_tanl.c s_truncl.c w_cabsl.c \
 	s_nextafterl.c s_rintl.c s_scalbnl.c

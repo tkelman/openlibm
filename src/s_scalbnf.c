@@ -52,5 +52,3 @@ scalbnf (float x, int n)
 	SET_FLOAT_WORD(x,(ix&0x807fffff)|(k<<23));
         return x*twom25;
 }
-
-__strong_reference(scalbnf, ldexpf);
