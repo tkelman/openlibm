@@ -65,4 +65,4 @@ scalbnl (long double x, int n)
         return u.e*0x1p-128;
 }
 
-DLLEXPORT __strong_reference(scalbnl, ldexpl);
+__strong_reference(scalbnl, ldexpl);

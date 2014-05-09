@@ -23,10 +23,10 @@
 #ifdef __GNUC__
 #ifndef __strong_reference
 #ifdef __APPLE__
-#define __strong_reference(sym,aliassym)
+#define __strong_reference(sym,aliassym) __weak_reference(sym,aliassym)
 #else
 #define __strong_reference(sym,aliassym)	\
-	extern __typeof (sym) aliassym __attribute__ ((__alias__ (#sym)));
+	DLLEXPORT extern __typeof (sym) aliassym __attribute__ ((__alias__ (#sym)));
 #endif /* __APPLE__ */
 #endif /* __strong_reference */
 
