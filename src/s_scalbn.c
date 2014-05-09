@@ -62,8 +62,4 @@ __weak_reference(scalbn, ldexpl);
 __weak_reference(scalbn, scalbnl);
 #endif
 
-DLLEXPORT double
-ldexp (double x, int n)
-{
-    return scalbn(x,n);
-}
+DLLEXPORT __strong_reference(scalbn, ldexp);
