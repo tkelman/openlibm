@@ -53,4 +53,8 @@ scalbnf (float x, int n)
         return x*twom25;
 }
 
-__strong_reference(scalbnf, ldexpf);
+DLLEXPORT float
+ldexpf (float x, int n)
+{
+    return scalbnf(x,n);
+}
